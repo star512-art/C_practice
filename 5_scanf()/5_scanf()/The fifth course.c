@@ -101,10 +101,19 @@
 //	printf("%d\n",r);
 //}
 
-int main() {//赋值忽略符
-	int a = 0;
-	int b = 0;
-	b = scanf("%*d %d %*f", &a);
-	printf("%d\n", a);
-	printf("%d\n", b);
+//int main() {//赋值忽略符
+//	int a = 0;
+//	int b = 0;
+//	b = scanf("%*d %d %*f", &a);
+//	printf("%d\n", a);
+//	printf("%d\n", b);
+//}
+
+int main() {//输入是不管是输入数字还是字符，其实在电脑内部都是字符
+	float a = 0.0f;
+	char ch = 0;//输入一个数字7
+
+	scanf("%f %c", &a,&ch);
+	printf("%c\n", ch);//输出还是7
+	printf("%f\n", a);
 }
