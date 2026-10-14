@@ -232,12 +232,15 @@ void game()//游戏过程
 {
     int computer = 0;
     int player = 0;
+    int count = 0;
     //随机数字的生成
     computer = rand() % 100 + 1;
     //判断+循环
     while (1) //死循环
     {
         scanf("%d", &player);
+        count++;
+        printf("你已经猜了%d次 ", count);//输出你的猜的次数
         if (player > computer)
             printf("猜大了\n");
         else if (player < computer)
@@ -246,6 +249,12 @@ void game()//游戏过程
         {
             printf("猜对了\n");
             break; //break要写在花括号里，不然就算你输入的数字不对，也会直接break
+        }
+        if (count == 5)
+        {
+            printf("已经达到5次上限，本关失败\n");
+            printf("要猜的数字是%d\n", computer);
+            break;
         }
     }
 
@@ -275,6 +284,7 @@ int main()
         {
         case 1:
             printf("开始游戏\n");
+            printf("请输入你要猜的数字:");
             game();//调用
             break;
         case 0:
