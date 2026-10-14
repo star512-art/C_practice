@@ -504,23 +504,537 @@
 //	}
 //
 //	return 0;
+////}
+//
+//int main() //最大公约数
+//{
+//	int a = 0;
+//	int b = 0;
+//	int max = 0;
+//	scanf("%d%d", &a, &b);
+//	for (int i = 1; i <= a; i++)
+//	{
+//		if (a % i == 0 && b % i == 0)
+//		{
+//			if (i > max)
+//				max = i;
+//		}
+//	}
+//	printf("%d\n", max);
+//
+//
+//}
+//
+//int main() //打印1到10的数字
+//{
+////	int n = 0;
+////
+////	while (n <= 10) //当n>10的时候，就跳出循环
+////	{
+////		n++;
+////		printf("%d ", n);
+////	}
+////
+////int n = 1;
+////
+////while (n <= 10)
+////{
+////	printf("%d ", n);
+////	n++;
+//////}
+////	int n = 0;
+////
+////	for (n = 1; n < 11; n++) //循环10次
+////	{
+////		printf("%d ", n);
+//////	}
+////	int n = 0;
+////
+////	for (n = 0; n < 10; n++)
+////	{
+////		
+////		printf("%d ", n+1);
+////	}
+//	/*int n = 1;
+//	do
+//	{
+//		printf("%d ", n);
+//		n++;
+//	} while (n <= 10);*/
+//	int n = 0;
+//	do
+//	{
+//		n++;
+//		printf("%d ", n);
+//	} while (n < 10);
+//}
+//
+//int main()//打印一个正整数的每一位，逆序
+//{
+//	int n = 0;
+//	int i = 0;
+//	scanf("%d", &n);
+//
+//	while (n)
+//	{
+//		i = n % 10;
+//		printf("%d ", i);
+//		n /= 10;
+//	}
+//}
+//
+//
+////int main()
+////{/*
+//	int n = 0;
+//	int i = 0;
+//	scanf("%d", &n);
+//
+//	while (i < n)
+//	{
+//		i++;
+//		if (i % 2 == 0)
+//			printf("%d ", i);
+//		
+	///*}*/
+	//int n = 0;
+	//int i = 0;
+	//scanf("%d", &n);
+	//for (i = 1; i <= n; i++)
+	//{
+	//	if (i % 2 == 0)
+	//		printf("%d ", i);
+	//}*/
+
+	//int n = 0;
+	//int i = 2;//最小的偶数是2
+	//scanf("%d", &n);
+	//while (i <= n)
+	//{
+	//	printf("%d ", i);
+	//	i += 2;
+	//}
+
+	/*int n = 0;
+	int i = 2;
+
+	scanf("%d", &n);
+	for (i = 2; i <= n; i+=2)
+	{
+		printf("%d ", i);
+	}
+//}*/
+
+	//int main()//多变量控制循环
+	//{ 
+	//	int a = 0;
+	//	int b = 0;
+	//	for (b = 0, a = 10; b < a; b++, a--)
+	//	{
+	//		printf("b=%d a=%d\n", b, a); //b=0 a=10
+	//		                             //b=1 a=9
+	//									 // b=2 a=8
+	//									 // b=3 a=7
+	//									 // b=4,a=6
+ //       }
+	//}
+//
+//int main()//for的特殊写法
+//{
+//	///*for (;;)
+//	//{
+//	//	printf("haha\n");
+//	//}*/
+//
+//	int n = 1;
+//	for (; n < 3; n++)
+//	{
+//		printf("%d ", n);
+//	}
+//	printf("%d\n", n);
+//}
+//
+////int main()//逗号表达式
+////{
+////	int a = 1;
+////	int b = 2;
+////	int c = (b = 4, a = b + 10, b = a + 1); //c=15
+////	printf("%d\n", c);
+////}
+//
+////int main()
+////{/*
+////	int n = 0;
+//	int sum = 0;
+//	for (n = 1; n <= 100; n++)
+//	{
+//		if (n % 3 == 0)
+//			sum += n;
+//	}
+//	printf("%d\n", sum)*/;
+//
+//	int n = 1;
+//	int sum = 0;
+//	while (n <= 100)
+//	{
+//		if (n % 3 == 0)
+//			sum += n;
+//		n++;
+//	}
+//	printf("%d\n", sum);
+//
+//	int n = 3;
+//	int sum = 0;
+//	for (n = 3; n <= 100; n += 3)
+//	{
+//		sum += n;
+//	}
+//	printf("%d\n", sum);
 //}
 
-int main() //最大公约数
+	/*int main()//输出一个正整数有几位
+	{
+		int n = 0;
+		int count = 0;
+		scanf("%d", &n);
+		do
+		{
+			n /= 10;
+				count++;
+		} while (n);
+			printf("%d", count);
+	}*/
+//
+//int main()//输出一个整数有几位
+//{
+//	int n = 0;
+//	int count = 0;
+//	scanf("%d", &n);
+//	while (1)
+//	{
+//		n /= 10;
+//		count++;
+//		if (n == 0)
+//			break;
+//	}
+//	printf("%d\n", count);
+//}
+
+//
+//int main()//输出一个整数有几位
+//{
+//	int n = 0;
+//	int count = 0;
+//	do
+//	{
+//		scanf("%d", &n);
+//		if (n <= 0)
+//			printf("输入错误，请重新输入:");
+//	} while (n <= 0);
+//	while (1)
+//	{
+//		n /= 10;
+//		count++;
+//		if (n == 0)
+//			break;
+//	}
+//	printf("%d\n", count);
+//}
+//
+//int main()
+//{
+//	int i = 1;
+//
+//	while (i <= 10)
+//	{
+//		printf("%d\n", i);
+//		if (i == 5)
+//			break;
+//		i++;
+//	}
+//}
+
+//
+//int main()
+//{
+//	int i = 1;
+//
+//	while (i <= 10)
+//	{
+//		i++;
+//		if (i == 5)
+//			continue;
+//		printf("%d\n", i);
+//	}
+//
+//}
+//
+//int main()//for循环中的continue
+//{
+//	int i = 0;
+//	for (i = 1; i <= 10; i++)
+//	{
+//		if (i == 5)
+//			continue;
+//		printf("%d ", i);
+//	}
+//}
+//
+//int main()//do while中的continue
+//{
+//	int i = 1;
+//	do
+//	{
+//		if (i == 5)
+//			continue;
+//		printf("%d ", i);
+//		i++;
+//	} while (i <= 10);
+//}
+//
+//int main()//素数
+//{
+//	int n = 0;
+//	int i = 0;
+//	int count = 0;
+//
+//	for (n = 100; n <= 200; n++) //创造出100到200之间的数
+//	{
+//		int flag = 1;//设置一个状态量,每次循环都刷新成1
+//		//进行筛选
+//		for (i = 2; i < n; i++)//找到2到n之间的数
+//		{
+//			if (n % i == 0) //如果被整除，跳出循环
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		//跳出循环的，有两种情况，一种是素数，一种是被整除了，跳出
+//		if (flag)
+//		{
+//			printf("%d是素数\n", n);
+//			count++;
+//		}
+//		
+//	}
+//	printf("%d\n", count);
+//}
+
+//int main()//素数
+//{
+//	int n = 0;
+//	int i = 0;
+//	int count = 0;
+//
+//	for (n = 100; n <= 200; n++) //创造出100到200之间的数
+//	{
+//		//进行筛选
+//		for (i = 2; i < n; i++)//找到2到n之间的数，最终跳出i=n
+//		{
+//			if (n % i == 0) //如果被整除，跳出循环
+//			break;
+//		}
+//		//跳出循环的，有两种情况，一种是素数，一种是被整除了，跳出
+//		if (i == n)
+//		{
+//			printf("%d是素数\n", n);
+//			count++;
+//		}
+//	}
+//	printf("%d\n", count);
+//}
+
+//int main()//素数
+//{
+//	int n = 0;
+//	int i = 0;
+//	int count = 0;
+//
+//	for (n = 101; n <= 200; n+=2) //创造出100到200之间的数
+//	{
+//		//进行筛选
+//		for (i = 2; i< n; i++)//找到2到n之间的数，最终跳出i=n
+//		{
+//			if (n % i == 0) //如果被整除，跳出循环
+//				break;
+//		}
+//		//跳出循环的，有两种情况，一种是素数，一种是被整除了，跳出
+//		if (i == n)
+//		{
+//			printf("%d是素数\n", n);
+//			count++;
+//		}
+//	}
+//	printf("%d\n", count);
+//}
+//
+//int main()//goto
+//{
+//	goto next;
+//	printf("haha\n");
+//	printf("hehe\n");
+//	next:
+//	printf("跳过了两条指令\n");
+//
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	//输入
+//	scanf("%d%d%d", &a, &b, &c);
+//	//判断
+//	if (a > b && a > c) //a为最大
+//	{
+//		if (b > c)//b为第二大
+//			printf("%d %d %d\n", a, b, c);
+//		else//c为第二大
+//			printf("%d %d %d\n", a, c, b);
+//	}
+//	else if (b > a && b > c)//b为最大的情况
+//	{
+//		if (a > c)//a为第二大
+//			printf("%d %d %d\n", b, a, c);
+//		else//c为第二大
+//			printf("%d %d %d\n", b, c, a);
+//	}
+//	else//c为最大
+//	{
+//		if (a > b)//a为第二大
+//			printf("%d %d %d\n", c, a, b);
+//		else//b为第二大
+//			printf("%d %d %d\n", c, b, a);
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	int tmp = 0;
+//	//输入
+//	scanf("%d%d%d", &a, &b, &c);
+//	//判断
+//	if (a < b)
+//	{
+//		tmp = a;//将a的值赋给中间变量，防止a中的数据被b中的数据覆盖而消失
+//		a = b;
+//		b = tmp;
+//	}
+//	if (a < c)
+//	{
+//		tmp = a;
+//		a = c;
+//		c = tmp;
+//	}
+//	if (b < c)
+//	{
+//		tmp = b;
+//		b = c;
+//		c = tmp;
+//	}
+//	printf("%d %d %d\n", a, b, c);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	//输入a
+//	scanf("%d", &a);
+//	//输入9次别的数字，进行比较，判断
+//	for (int i = 1; i < 10; i++)
+//	{
+//		scanf("%d", &b);
+//		if (a < b)
+//		{
+//			int tmp = 0;
+//			tmp = a;
+//			a = b;
+//			b = tmp;
+//		}
+//	}
+//	printf("%d\n", a);
+//}
+
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int right = sizeof(arr) / sizeof(0);
+//	//向数组中输入数据
+//	for (int i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	for (int n = 1; n < right; n++)
+//	{
+//		int tmp = 0;
+//
+//		if (arr[0] < arr[n])
+//		{
+//			arr[0] = arr[n];
+//		}
+//	}
+//	printf("最大值是%d\n", arr[0]);
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	int count = 0;
+//	//创造出1到100之间的数字
+//	for (n = 1; n <= 150; n++)
+//	{
+//		int tmp = n;                                     // 100 20，109，119，129，139，149  一共是25个
+//		//数一数有几个数字9
+//		while (tmp)//n为0时条件为假，就跳出循环
+//		{
+//			if (tmp % 10 == 9)
+//				count++;
+//			tmp /= 10;
+//		}
+//	}
+//	printf("count=%d\n", count);
+//}
+
+//
+//int main()
+//{
+//	int n = 0;
+//	int count = 0;
+//	//创造出1到100之间的数字
+//	for (n = 1; n <= 100; n++)
+//	{
+//		if (n % 10 == 9)//末尾
+//			count++;
+//		if (n / 10 == 9)//首位
+//			count++;
+//	}
+//	printf("count=%d\n", count);
+//}
+
+int main()
 {
 	int a = 0;
 	int b = 0;
-	int max = 0;
+	int max = 0;//表示最大公约数
+	int n = 0;
+	//输入
 	scanf("%d%d", &a, &b);
-	for (int i = 1; i <= a; i++)
+	//找到a的约束
+	for (n = 1; n <= a; n++)//找到a的约数
 	{
-		if (a % i == 0 && b % i == 0)
+		if (a % n == 0 && b % n ==0 )//找到公约数
 		{
-			if (i > max)
-				max = i;
+			if (max < n)//进行比较
+				max = n;
 		}
 	}
-	printf("%d\n", max);
-
-
+	printf("最大公约数是%d\n", max);
 }
