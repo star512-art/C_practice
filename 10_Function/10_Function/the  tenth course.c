@@ -151,3 +151,19 @@
 //		printf("找不到\n");
 //	return 0;
 //}
+int aver(int a, int b)
+{
+	return a + (b - a) / 2;
+}
+int main()//计算两个数的平均数
+{
+	int a = 0;
+	int b = 0;
+	//输入
+	scanf("%d%d", &a, &b);
+	//调用函数，计算平均值
+	int r=aver( a, b);
+	printf("平均值是%d", r);
+
+	return 0;
+}
